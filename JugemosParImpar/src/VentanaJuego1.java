@@ -60,14 +60,7 @@ public class VentanaJuego1 extends javax.swing.JFrame {
 
     private void panelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelMousePressed
         // TODO add your handling code here:
-        x = movNumero.getX();
-        y = movNumero.getY();
-        System.out.println(movNumero.getLocation());
-        
-        switch(evt.getLocationOnScreen()){
-            case
-            
-        }
+       
     }//GEN-LAST:event_panelMousePressed
 
     /**
