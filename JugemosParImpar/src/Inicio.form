@@ -48,7 +48,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="225" max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="212" max="-2" attributes="0"/>
+                  <Component id="InicioJuego" min="-2" pref="212" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -57,14 +57,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="InicioJuego" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace pref="256" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="InicioJuego">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="66" type="rgb"/>
@@ -80,7 +80,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="InicioJuegoMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
