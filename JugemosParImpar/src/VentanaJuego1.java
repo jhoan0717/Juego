@@ -13,6 +13,7 @@ public class VentanaJuego1 extends javax.swing.JFrame {
     private void initComponents() {
 
         panel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         mov = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -21,10 +22,20 @@ public class VentanaJuego1 extends javax.swing.JFrame {
 
         panel.setBackground(new java.awt.Color(102, 255, 102));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo2.jpg"))); // NOI18N
+
         mov.setText("Prueba");
         mov.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 movMouseDragged(evt);
+            }
+        });
+        mov.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                movMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                movMouseReleased(evt);
             }
         });
 
@@ -32,21 +43,21 @@ public class VentanaJuego1 extends javax.swing.JFrame {
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 655, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelLayout.createSequentialGroup()
                     .addGap(273, 273, 273)
                     .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(274, Short.MAX_VALUE)))
+                    .addContainerGap(579, Short.MAX_VALUE)))
         );
         panelLayout.setVerticalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 507, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelLayout.createSequentialGroup()
                     .addGap(235, 235, 235)
                     .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(236, Short.MAX_VALUE)))
+                    .addContainerGap(369, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -65,10 +76,18 @@ public class VentanaJuego1 extends javax.swing.JFrame {
 
     private void movMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_movMouseDragged
         // TODO add yomov
-        mov.setLocation(mov.getLocation().x+evt.getX()- mov.getWidth()/2,WIDTH);
-        mov.setLocation(mov.getLocation().y+evt.getY()- mov.getWidth()/2,WIDTH);
+        mov.setLocation(mov.getLocation().x+evt.getX()- mov.getWidth()/2,mov.getLocation().y+evt.getY()- mov.getHeight());
+          
        
     }//GEN-LAST:event_movMouseDragged
+
+    private void movMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_movMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_movMousePressed
+
+    private void movMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_movMouseReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_movMouseReleased
 
     /**
      * @param args the command line arguments
@@ -106,6 +125,7 @@ public class VentanaJuego1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel mov;
     private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables
