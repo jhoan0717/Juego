@@ -17,7 +17,7 @@ public class Inicio extends javax.swing.JFrame {
         InicioJuego = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(500, 250));
+        setLocation(new java.awt.Point(500, 200));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));

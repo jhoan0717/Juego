@@ -17,6 +17,7 @@ public class VentanaJuego1 extends javax.swing.JFrame {
         movNumero = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(500, 200));
         setResizable(false);
 
         panel.setBackground(new java.awt.Color(102, 255, 102));
