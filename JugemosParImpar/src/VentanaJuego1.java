@@ -5,8 +5,12 @@ public class VentanaJuego1 extends javax.swing.JFrame {
     public VentanaJuego1() {
         initComponents();
         panel.setFocusable(true);
+        
     }
 
+    
+    
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -21,18 +25,10 @@ public class VentanaJuego1 extends javax.swing.JFrame {
 
         panel.setBackground(new java.awt.Color(102, 255, 102));
 
-        mov.setText("Prueba");
+        mov.setText("2");
         mov.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 movMouseDragged(evt);
-            }
-        });
-        mov.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                movMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                movMouseReleased(evt);
             }
         });
 
@@ -41,16 +37,16 @@ public class VentanaJuego1 extends javax.swing.JFrame {
         panelLayout.setHorizontalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelLayout.createSequentialGroup()
-                .addGap(273, 273, 273)
-                .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addGap(248, 248, 248)
+                .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(258, Short.MAX_VALUE))
         );
         panelLayout.setVerticalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelLayout.createSequentialGroup()
-                .addGap(235, 235, 235)
-                .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addGap(130, 130, 130)
+                .addComponent(mov, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -71,20 +67,9 @@ public class VentanaJuego1 extends javax.swing.JFrame {
         // TODO add yomov
         mov.setLocation(mov.getLocation().x+evt.getX()- mov.getWidth()/2,mov.getLocation().y+evt.getY()- mov.getHeight());
           
-       
     }//GEN-LAST:event_movMouseDragged
 
-    private void movMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_movMousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_movMousePressed
-
-    private void movMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_movMouseReleased
-        // TODO add your handling code here:
-    }//GEN-LAST:event_movMouseReleased
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
