@@ -25,6 +25,7 @@ public class VentanaJuego1 extends javax.swing.JFrame {
 
         panel.setBackground(new java.awt.Color(102, 255, 102));
 
+        mov.setFont(new java.awt.Font("Comic Sans MS", 0, 48)); // NOI18N
         mov.setText("2");
         mov.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
