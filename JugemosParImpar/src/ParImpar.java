@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ParImpar {
  ;
  
- public static void Validar(String[]args){
+ public static void main(String[]args){
      int numero;
      Scanner teclado=new Scanner (System.in);
      numero = teclado.nextInt();
