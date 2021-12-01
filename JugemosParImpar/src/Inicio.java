@@ -8,7 +8,7 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
     }
 
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -72,7 +72,7 @@ public class Inicio extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_InicioJuegoMouseClicked
 
-    
+
     public static void main(String args[]) {
         //Evento para iniciar la ventana Jframe
         java.awt.EventQueue.invokeLater(() -> {
